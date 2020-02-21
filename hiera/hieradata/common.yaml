@@ -12,11 +12,11 @@ jenkins::slave::version: *jenkins_swarm_version
 # This should be unchanged so that the masterurl always uses the hosts entry to reach master.
 jenkins::slave::masterurl: 'http://master:8080'
 
-master::ip: 172.30.1.145
-repo::ip: 172.30.1.69
+master::ip: 127.0.0.1
+repo::ip: 127.0.0.1
 
 # change this to match the timezone that this buildfarm is located in.
-timezone: 'America/Los_Angeles'
+timezone: 'Asia/Tokyo'
 
 # SSH keys to be added to each host.
 # The jenkins-agent public key is one you'll want to generate specifically for your deployment.
@@ -43,8 +43,8 @@ ssh_keys:
   #
   # Use the comment as the key name
   'jenkins-agent@my-buildfarm':
-      type: REPLACE_WITH_AGENT_SSH_KEY_TYPE
-      key: REPLACE_WITH_AGENT_SSH_KEY
+      type: ssh-rsa
+      key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDUATeGXrmVIj0Cm0AcVY8y8yd2c09B2YE0RcxXFHV2MIy6ULnFdD7ri0dB0lXZaVQzzZWCHtPpYATcqclf66VO/1UTvfIcHoIUcFTYTk1LPvKOYkZnZ64QgcMaNkGTUub5t3JcXpISCR+J/GqTH3es/v9TTPePOpGUzOvaEy1UxYHpnIlDnD52tHxbvEsqBqJ7wUMXkIKTuJ4Pj7G9Wk+2WywGHoKkwL0Pho6pN1LcZDOqEgbsWx/WQn3Q/Vzlz0hCknBbI77xiSbzfsizG7FObRDla5AmL0FFQFdk9lzxPC9oE+f3PgUt0oZQKRqF+mapekoHSAGjzlKiZCmVlvdH
       user: jenkins-agent
       require: User[jenkins-agent]
     ## If you wish to add keys for administrative access you can do so as well.
@@ -63,7 +63,7 @@ ssh_keys:
 #     ssh repo -T cat /etc/ssh/ssh_host_ed25519_key.pub
 # will print your ed25519 host key which you can paste below
 ssh_host_keys:
-  repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA+bpD1Hf9LB+VFN6V6xdRsTi05gPHd0l7LhWbDZpAQM
+  repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPKZjnHfgyyaQCiqS8b0z835c+e6b6/fVSgTx8UukOrB
 
 # if `autoreconfigure` is true this will set a cron task to re-run puppet periodically.
 # Do not autoreconfigure your master machine during normal running, doing so will overwrite
