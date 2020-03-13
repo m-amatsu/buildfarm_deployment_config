@@ -12,8 +12,8 @@ jenkins::slave::version: *jenkins_swarm_version
 # This should be unchanged so that the masterurl always uses the hosts entry to reach master.
 jenkins::slave::masterurl: 'http://master:8080'
 
-master::ip: 192.198.160.1
-repo::ip: 192.198.160.20
+master::ip: 10.23.160.116
+repo::ip: 10.23.162.232
 
 # change this to match the timezone that this buildfarm is located in.
 timezone: 'Asia/Tokyo'
@@ -44,7 +44,7 @@ ssh_keys:
   # Use the comment as the key name
   'jenkins-agent@my-buildfarm':
       type: ssh-rsa
-      key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDUATeGXrmVIj0Cm0AcVY8y8yd2c09B2YE0RcxXFHV2MIy6ULnFdD7ri0dB0lXZaVQzzZWCHtPpYATcqclf66VO/1UTvfIcHoIUcFTYTk1LPvKOYkZnZ64QgcMaNkGTUub5t3JcXpISCR+J/GqTH3es/v9TTPePOpGUzOvaEy1UxYHpnIlDnD52tHxbvEsqBqJ7wUMXkIKTuJ4Pj7G9Wk+2WywGHoKkwL0Pho6pN1LcZDOqEgbsWx/WQn3Q/Vzlz0hCknBbI77xiSbzfsizG7FObRDla5AmL0FFQFdk9lzxPC9oE+f3PgUt0oZQKRqF+mapekoHSAGjzlKiZCmVlvdH
+      key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDRtZ4l9gGRPDBnSJ1/WnISZtjnEuyHwE6YcuUxsufwxy8w6w+QYBrlN6H3mnFxTX1yCy7X4xjmDftb0Ef10AGTtSe3q1YV2X95eCN0i3Bf+n87mYK4Gd56Qoc/m/U2LPx8uoTFzUqiVyDcYDFoDJ2FX09vJ2McHmp3RKZ+7K/Tp2Zo3dF13PNSw/t6lyBwJk5Fuhepz2OvkxK5n0eBryZxtL7NuMv+higcEcDbzCvPEoWfk0F1IwIPUnSemxLMn/DBJLeccPEp9o099rcpsj8j5OTah8u4bT88yH6zfmIvzOgmaO1NrOFEXx4f+khmvGRlDBbkcAozYVvYwkqT/NHr
       user: jenkins-agent
       require: User[jenkins-agent]
     ## If you wish to add keys for administrative access you can do so as well.
@@ -63,7 +63,7 @@ ssh_keys:
 #     ssh repo -T cat /etc/ssh/ssh_host_ed25519_key.pub
 # will print your ed25519 host key which you can paste below
 ssh_host_keys:
-  repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPKZjnHfgyyaQCiqS8b0z835c+e6b6/fVSgTx8UukOrB
+  repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICqr0TORYeKAqXWFvYYIVH8eoboWT+8cswO4JfcX/TJD
 
 # if `autoreconfigure` is true this will set a cron task to re-run puppet periodically.
 # Do not autoreconfigure your master machine during normal running, doing so will overwrite
