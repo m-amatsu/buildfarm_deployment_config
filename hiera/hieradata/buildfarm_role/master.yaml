@@ -31,7 +31,7 @@ jenkins::slave::slave_name: agent_on_master
 
 jenkins::private_ssh_key: |
     -----BEGIN RSA PRIVATE KEY-----
-   5hKbeHh+4TvlcD2ZWwJi+qt9XvgJe/MA1K0FzE2WVUSF/POdo8ZavrCKQ0CfWHiS
+    5hKbeHh+4TvlcD2ZWwJi+qt9XvgJe/MA1K0FzE2WVUSF/POdo8ZavrCKQ0CfWHiS
     DUodSUuT8kRtPeJUbJJAFZkVqhkl8z33QWJ98c0xh8CPkUxUl+vWajI/eaaQl9eC
     qE58d8Mmje/JueJQTsPMrU+0Kxb2B2BnToXmFhR+3g0sYMb21cRVp4y6/Tj3EVIt
     dEY2aje343UDHI0Encp+E20SFBsKnrCLQYF9erJ/0SGb3RXb0qVuHKRp65cUxW/p
