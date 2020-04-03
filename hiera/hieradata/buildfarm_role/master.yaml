@@ -1,5 +1,6 @@
 user::admin::name: admin
-user::admin::password_hash: '#jbcrypt:$2a$10$vmmqzRmcDHj1t9Ajgq5edekPD8cbpD./pBSGcYzia.OsIroOKjghm'
+#user::admin::password_hash: '#jbcrypt:$2a$10$vmmqzRmcDHj1t9Ajgq5edekPD8cbpD./pBSGcYzia.OsIroOKjghm'
+user::admin::password_hash: '#jbcrypt:$2a$10$CUpYev3U9gwWTh2w.G2ki.Fi3ZCAD57FZJo8ECIvLj.IoZJZwxZs2'
 
 credentials::jenkins-slave::username: jenkins-agent
 credentials::jenkins-slave::id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5

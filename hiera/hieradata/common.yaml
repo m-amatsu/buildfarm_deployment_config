@@ -63,7 +63,7 @@ ssh_keys:
 #     ssh repo -T cat /etc/ssh/ssh_host_ed25519_key.pub
 # will print your ed25519 host key which you can paste below
 ssh_host_keys:
-    repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICqr0TORYeKAqXWFvYYIVH8eoboWT+8cswO4JfcX/TJD
+  repo: repo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICqr0TORYeKAqXWFvYYIVH8eoboWT+8cswO4JfcX/TJD
 
 # if `autoreconfigure` is true this will set a cron task to re-run puppet periodically.
 # Do not autoreconfigure your master machine during normal running, doing so will overwrite
