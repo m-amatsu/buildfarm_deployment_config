@@ -44,7 +44,8 @@ ssh_keys:
   # Use the comment as the key name
   'jenkins-agent@my-buildfarm':
     type: ssh-rsa
-    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDRtZ4l9gGRPDBnSJ1/WnISZtjnEuyHwE6YcuUxsufwxy8w6w+QYBrlN6H3mnFxTX1yCy7X4xjmDftb0Ef10AGTtSe3q1YV2X95eCN0i3Bf+n87mYK4Gd56Qoc/m/U2LPx8uoTFzUqiVyDcYDFoDJ2FX09vJ2McHmp3RKZ+7K/Tp2Zo3dF13PNSw/t6lyBwJk5Fuhepz2OvkxK5n0eBryZxtL7NuMv+higcEcDbzCvPEoWfk0F1IwIPUnSemxLMn/DBJLeccPEp9o099rcpsj8j5OTah8u4bT88yH6zfmIvzOgmaO1NrOFEXx4f+khmvGRlDBbkcAozYVvYwkqT/NHr
+#    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDRtZ4l9gGRPDBnSJ1/WnISZtjnEuyHwE6YcuUxsufwxy8w6w+QYBrlN6H3mnFxTX1yCy7X4xjmDftb0Ef10AGTtSe3q1YV2X95eCN0i3Bf+n87mYK4Gd56Qoc/m/U2LPx8uoTFzUqiVyDcYDFoDJ2FX09vJ2McHmp3RKZ+7K/Tp2Zo3dF13PNSw/t6lyBwJk5Fuhepz2OvkxK5n0eBryZxtL7NuMv+higcEcDbzCvPEoWfk0F1IwIPUnSemxLMn/DBJLeccPEp9o099rcpsj8j5OTah8u4bT88yH6zfmIvzOgmaO1NrOFEXx4f+khmvGRlDBbkcAozYVvYwkqT/NHr
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQC7H3GqIC3Y2IS/BZZs3CcwAiJdsnCoNC6DhrKSmQEGNk8BU1bRWWTZ6wpfd0j1TYY68NSFc/KX6RBIvHaIk9MNNhQPgESoommWafrb9P5x+qgwB9W2H4O/ZlW1LwInYZRRwu8mRGGOCEbZGe8+2QSSFbHrq9oDatRMRLZQCo788nCkatMa1eEpc1QsND+L5QuaiQTASM/0ULzRz5WVgPaf4Ig7EqTZ+Cncb+Gnxr3PWPQbBUZP+4HE43pd8vqAdkcgQ6DPPVcbwaMmVSkgKoMDxEN3ndFvTi15SMWAJlgqbg9TXTbC+CHqi3T/89mIVu4zV0pPvJBx3nkurfGK5Amd
     user: jenkins-agent
     require: User[jenkins-agent]
     ## If you wish to add keys for administrative access you can do so as well.
